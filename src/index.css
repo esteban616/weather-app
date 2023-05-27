@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+*{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+body{
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+}
+button, input{
+    font-family: inherit;
+}
+h1,h2,h3,p,ul{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img{
+    display: block;
+}
+button{
+    border: none;
+    cursor: pointer;
+}

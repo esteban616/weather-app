@@ -1,0 +1,67 @@
+.weather{
+    background-color: #ffffff99;
+    padding: 2em;
+    border-radius: 0.8em;
+    width: 100%;
+    max-width: 400px;
+}
+.weatherTitle{
+    text-align: center;
+    font-size: 2rem;
+}
+.weatherSubtitle{
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+.weatherBody{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 0.5em;
+    margin-bottom: 1.5em;
+}
+.weatherInfo{
+    margin-top: 1em;
+}
+.weatherInfoTitle{
+    text-align: center;
+    margin-bottom: 0.8em;
+    font-size: 1.1rem;
+}
+.weatherList{
+    display: grid;
+    gap: 0.7em;
+}
+.weatherListItem{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1rem;
+}
+.weatherListLabel{
+    opacity: 0.7;
+}
+.weatherListValue{
+    font-weight: 550;
+}
+.weatherTemp{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+}
+.weatherBtn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    transition:background-color 0.5s ;
+    font-size: 0.9rem;
+    
+
+}
+.weatherBtn:hover{
+    background-color: transparent;
+    border-style:inset;
+}
+
+
