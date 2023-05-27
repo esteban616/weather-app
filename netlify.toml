@@ -1,0 +1,6 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  VITE_API_KEY="ed802941f18bb5ecfab58e06fbb265b5"
