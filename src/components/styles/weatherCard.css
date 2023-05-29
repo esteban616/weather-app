@@ -38,10 +38,10 @@
     font-size: 1rem;
 }
 .weatherListLabel{
-    opacity: 0.7;
+    opacity: 0.4;
 }
 .weatherListValue{
-    font-weight: 550;
+    font-weight: 650;
 }
 .weatherTemp{
     text-align: center;
@@ -54,14 +54,38 @@
     margin-right: auto;
     padding: 0.5em 1em;
     border-radius: 0.5em;
-    transition:background-color 0.5s ;
+    transition:background-color 0.5s , transform 0.5s ;
     font-size: 0.9rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     
 
 }
 .weatherBtn:hover{
     background-color: transparent;
-    border-style:inset;
+    transform: scale(1.05);
+}
+.formWether{
+    padding-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1em;
+}
+
+.formWether input{
+    border-radius: 0.3em;
+    border-style: hidden;
+    margin: 0.5em;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    opacity: 0.5;
+}
+.formWether button{
+    border-radius: 0.5em;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    transition:background-color 0.5s , transform 0.5s ;
+}
+.formWether button:hover{
+    background-color: transparent;
+    transform: scale(1.05);
 }
 
 

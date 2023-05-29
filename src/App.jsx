@@ -9,6 +9,7 @@ function App() {
   const [coords, setcoords] = useState();
   const [weather, setweather] = useState();
   const [temp, settemp] = useState()
+  const [city, setcity] = useState()
 
 
 
@@ -25,7 +26,10 @@ function App() {
 
   useEffect(() => {
       if (coords) {
-        const url=` https://api.openweathermap.org/data/2.5/weather?lat=${coords?.lat}&lon=${coords?.lon}&appid=${import.meta.env.VITE_API_KEY}`
+        let url=` https://api.openweathermap.org/data/2.5/weather?lat=${coords?.lat}&lon=${coords?.lon}&appid=${import.meta.env.VITE_API_KEY}`
+        if(city){
+          url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${import.meta.env.VITE_API_KEY}`
+        }
         axios.get(url)
         .then(res=>{
           setweather(res.data)
@@ -38,7 +42,7 @@ function App() {
         .catch(err => console.log(err))
       }
        
-  }, [coords])
+  }, [coords,city])
 
   console.log(weather);
   
@@ -50,6 +54,7 @@ function App() {
         <WeatherCard 
         weather={weather} 
         temp={temp}
+        setcity={setcity}
         />
         :
         <Loading />

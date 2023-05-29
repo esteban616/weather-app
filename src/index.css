@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 *{
     box-sizing: border-box;
 }
@@ -8,7 +8,7 @@ ul{
 }
 
 body{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Quicksand', sans-serif;
     margin: 0;
 }
 button, input{

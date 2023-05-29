@@ -1,7 +1,7 @@
-
+import "./styles/loading.css"
 const Loading = () => {
   return (
-    <h1 className="loading">loading...</h1>
+    <h1 className="loading"></h1>
   )
 }
 

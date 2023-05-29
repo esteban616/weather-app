@@ -4,11 +4,16 @@
 import { useState } from "react";
 import "./styles/weatherCard.css"
 
-const WeatherCard = ({ weather,temp }) => {
+const WeatherCard = ({ weather,temp,setcity }) => {
   const [isCelsius, setisCelsius] = useState(true)
   
   const handleChangeTemp=()=>{
     setisCelsius(!isCelsius)
+  }
+  const handleSearch=(e)=>{
+    e.preventDefault();
+    setcity(e.target.inputValue.value.trim());
+    e.target.inputValue.value = "";
   }
     
   console.log(weather);
@@ -50,7 +55,12 @@ const WeatherCard = ({ weather,temp }) => {
       <aside>
         <h2 className="weatherTemp">{isCelsius ? `${temp?.celsius} °C`: `${temp.farenheit} °F`}</h2>
         <button onClick={handleChangeTemp} className="weatherBtn">Change to {isCelsius?"°F":"°C"}</button>
+        <form onSubmit={handleSearch} className="formWether">
+          <input type="text" id="inputValue" />
+          <button>Search</button>
+        </form>
       </aside>
+
     </article>
   );
 };
